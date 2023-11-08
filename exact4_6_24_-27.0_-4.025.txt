@@ -1,0 +1,6 @@
+### This is the setting we use for fig.2. 
+### Number of rows are the number of coexistence regions. This is a case with two two-phase regions.
+### In each row, the five items are: phase1 concentration, phase2 concentration, phase1 S fraction, phase2 S fraction, coexistence chemical potential.
+
+5.7563e-03 3.5319e-01 9.3845e-01 5.1846e-04 -2.1756e+00
+6.6168e-01 9.9756e-01 1.8093e-03 9.9999e-01 -1.7071e+00
