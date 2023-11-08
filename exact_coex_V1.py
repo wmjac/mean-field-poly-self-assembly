@@ -9,7 +9,7 @@ import sys
 ### m is the degree of complexation (n in the paper)
 m = 4
 
-### Excluded volume in unit of blob
+### Excluded volume in unit of blob volume (v_0)
 Np = 6
 Ns = 24
 
@@ -261,7 +261,7 @@ bidx.sort()
 
 
 ### if len(bidx)==0: no phase separation
-### if len(bidx)==2: two-phase region
+### if len(bidx)==2: one two-phase region
 ### if len(bidx)==4: two two-phase regions
 
 
@@ -286,7 +286,7 @@ if bidx:
         resu[i,:] = np.array([phi1n,phi2n,m*phis1/Ns*Np/phi1n,m*phis2/Ns*Np/phi2n,(f2-f1)/(phi2n-phi1n)]).reshape(-1)
     
 ### final results: 2D-array
-### number of rows are number of coexistence regions
+### The number of rows are the number of coexistence regions.
 ### In each row, the five items are: phase1 concentration, phase2 concentration,
 ### phase1 S fraction, phase2 S fraction, coexistence chemical potential.
 
